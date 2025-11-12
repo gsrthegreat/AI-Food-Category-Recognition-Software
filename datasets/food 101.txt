@@ -1,0 +1,4 @@
+import deeplake
+ds = deeplake.load('hub://activeloop/food-101-dataset-train')
+
+# https://www.kaggle.com/datasets/rkuo2000/uecfood256
