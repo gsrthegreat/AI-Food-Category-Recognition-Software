@@ -1,4 +1,11 @@
-import deeplake
-ds = deeplake.load('hub://activeloop/food-101-dataset-train')
+UEC-Food256
 
 # https://www.kaggle.com/datasets/rkuo2000/uecfood256
+
+Food-11 image dataset
+
+# https://www.kaggle.com/datasets/trolukovich/food11-image-dataset
+
+Food Image Classification
+
+# https://www.kaggle.com/datasets/gauravduttakiit/food-image-classification
