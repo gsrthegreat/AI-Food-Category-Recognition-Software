@@ -1,0 +1,47 @@
+ai-project/
+│
+├── datasets/
+│   ├── raw/
+│   │   └── uecfood256.zip           # original unzipped/zip files
+│   ├── extracted/
+│   │   └── UECFOOD256/              # the extracted dataset
+│   └── processed/
+│       └── images_ready/            # resized/cleaned images (optional)
+│
+├── src/
+│   ├── data/
+│   │   ├── prepare_dataset.py       # unzip, organize into train/val/test folders
+│   │   └── dataloader.py            # PyTorch Dataset/ImageFolder OR tf.data loader
+│   │
+│   ├── models/
+│   │   ├── cnn_simple.py            # your custom CNN
+│   │   ├── transfer_resnet.py       # transfer learning model
+│   │   └── __init__.py
+│   │
+│   ├── training/
+│   │   ├── train.py                 # main training loop
+│   │   ├── evaluate.py              # validation/testing script
+│   │   └── utils.py                 # metrics, plots, callbacks
+│   │
+│   └── inference/
+│       └── predict.py               # load model + predict on single image
+│
+├── notebooks/
+│   ├── exploration.ipynb            # dataset visualization & analysis
+│   ├── training_logs.ipynb          # training experiments
+│   └── results.ipynb                # confusion matrix, accuracy curves
+│
+├── models/
+│   ├── checkpoints/                 # intermediate epochs
+│   └── final/
+│       └── best_model.h5 or .pt
+│
+├── outputs/
+│   ├── logs/                        # tensorboard logs
+│   ├── plots/                       # loss/accuracy graphs
+│   └── predictions/                 # sample prediction visualizations
+│
+├── readme.md
+├── requirements.txt
+└── .gitignore
+
